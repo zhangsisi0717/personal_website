@@ -1,0 +1,170 @@
+/* common css file */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0px;
+  background-color: rgb(245, 245, 245);
+}
+
+h1 {
+  color: #36578d;
+  font-style: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+
+h2 {
+  color: #36578d;
+  font-style: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+div.top-fixed {
+  position: fixed;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 100;
+  background-color: rgb(245, 245, 245);
+}
+
+div.title {
+  padding-bottom: 0.2em;
+  margin-bottom: 1.5em;
+  border-bottom: 3px double rgb(100, 100, 100);
+}
+
+div.navi-section {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+ul.navi {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-family: serif;
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-decoration: none;
+  width: 17vw;
+}
+
+.navi a {
+  font-style: bold;
+  font-size: 1.5vw;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+a {
+  color: #224b8d;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px gray dotted;
+}
+
+a.navi-active {
+  background-color: black;
+  color: white;
+}
+
+a.navi-non-active {
+  background-color: rgb(230, 230, 230);
+  color: #36578d;
+}
+
+.navi a.navi-non-active:hover {
+  background-color: rgb(150, 150, 150);
+  color: white;
+  border-bottom: none;
+}
+
+.navi a.navi-non-active:focus {
+  background-color: rgb(150, 150, 150);
+  color: white;
+  border-bottom: none;
+  outline: none;
+}
+
+.imgtable {
+  display: flex;
+  flex-direction: row;
+}
+
+div.main-content-block {
+  top: 200px;
+  position: absolute;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+
+.text-body {
+  /* padding: 2px; */
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0;
+}
+
+div.image {
+  padding-left: 0;
+}
+
+p {
+  margin-block-start: 0em;
+  text-align: justify;
+}
+img.selfie {
+  height: 230px;
+  width: 275px;
+  padding-right: 0.5vw;
+  border-radius: 15px;
+}
+
+div.rectangle-box {
+  margin-top: 50px;
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+/* td.education-first-column {
+  column-span: ;
+} */
+
+td.education-second-column {
+  text-align: right;
+  margin-left: 50px;
+}
+
+table.education-form {
+  width: 90%;
+}
+
+td.education-form {
+  padding: 10px;
+}

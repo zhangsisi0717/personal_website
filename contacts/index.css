@@ -1,0 +1,60 @@
+img.icon {
+  height: 30px;
+  width: 30px;
+}
+
+table.contact-form {
+  font-family: serif;
+  border-spacing: 0;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 10px;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+tr.contact-entry td {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+tr.empty td {
+  padding: 0.6em;
+}
+
+td.contact-types span {
+  vertical-align: middle;
+}
+
+td.contact-types {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  background: rgb(230, 230, 230);
+  border-radius: 10px;
+  white-space: nowrap;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+td.contact-types:hover {
+  background: rgb(200, 200, 200);
+  transition: 0.5s;
+}
+
+td.empty-in-between {
+  padding-left: 1em;
+}
+
+td.contact-value {
+  /* padding-left: 1.5em; */
+  background: rgb(230, 230, 230);
+  border-radius: 10px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+td.contact-value:hover {
+  background: rgb(200, 200, 200);
+  transition: 0.5s;
+}

@@ -1,7 +1,8 @@
 /* common css file */
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: serif;
   margin: 0px;
   background-color: rgb(245, 245, 245);
 }
@@ -9,20 +10,25 @@ body {
 h1 {
   color: #36578d;
   font-style: bold;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
+  font-family: serif;
   font-size: 25px;
 }
 
 h2 {
   color: #36578d;
   font-style: bold;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
+  font-family: serif;
   font-size: 22px;
+  margin: 0.5em;
 }
 
 h3 {
   font-size: 18px;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
+  font-family: serif;
+  margin-bottom: 0.5em;
 }
 
 div.top-fixed {
@@ -35,9 +41,10 @@ div.top-fixed {
 }
 
 div.title {
-  padding-bottom: 0.2em;
-  margin-bottom: 1.5em;
+  /* padding-bottom: 0.2em; */
+  margin-bottom: 1em;
   border-bottom: 3px double rgb(100, 100, 100);
+  margin-top: 2em;
 }
 
 div.navi-section {
@@ -62,20 +69,20 @@ li {
   float: left;
 }
 
-li a {
-  font-family: serif;
+.navi li a {
   display: block;
-  color: white;
+  /* color: white; */
   text-align: center;
   padding-top: 6px;
   padding-bottom: 6px;
   text-decoration: none;
-  width: 17vw;
+  width: 20vw;
 }
 
 .navi a {
+  font-family: serif;
   font-style: bold;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   margin-left: 0;
   margin-right: 0;
 }
@@ -112,59 +119,11 @@ a.navi-non-active {
   outline: none;
 }
 
-.imgtable {
-  display: flex;
-  flex-direction: row;
-}
-
 div.main-content-block {
-  top: 200px;
+  top: 180px;
   position: absolute;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-}
-
-.text-body {
-  /* padding: 2px; */
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  padding-top: 0;
-}
-
-div.image {
-  padding-left: 0;
-}
-
-p {
-  margin-block-start: 0em;
-  text-align: justify;
-}
-img.selfie {
-  height: 230px;
-  width: 275px;
-  padding-right: 0.5vw;
-  border-radius: 15px;
-}
-
-div.rectangle-box {
-  margin-top: 50px;
-  border-bottom: 1px solid rgb(100, 100, 100);
-}
-
-/* td.education-first-column {
-  column-span: ;
-} */
-
-td.education-second-column {
-  text-align: right;
-  margin-left: 50px;
-}
-
-table.education-form {
-  width: 90%;
-}
-
-td.education-form {
-  padding: 10px;
+  margin-left: 10.1%;
+  margin-right: 10.1%;
+  width: 79.8%;
+  overflow: hidden;
 }

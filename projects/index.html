@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sisi-Zhang</title>
+    <!-- <link rel="stylesheet" href="/common-style/common-style.css" type="text/css"/> -->
+    <link
+      rel="stylesheet"
+      href="../common-style/common-style.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+  </head>
+  <body>
+    <div class="top-fixed">
+      <div class="title">
+        <h1 class="a">Sisi Zhang</h1>
+        <h3>
+          M.S. Student, Khoury School of Computer Science, Northeastern
+          University
+        </h3>
+      </div>
+
+      <div class="navi-section">
+        <ul id="navbar" class="navi">
+          <li class="a">
+            <a class="navi-non-active" href="../index/index.html">About Me</a>
+          </li>
+          <li class="a">
+            <a class="navi-active" href="../projects/index.html">Projects</a>
+          </li>
+          <li class="a">
+            <a class="navi-non-active" href="../contacts/index.html"
+              >Contacts</a
+            >
+          </li>
+          <li class="a">
+            <a class="navi-non-active" href="../gallery/index.html">Gallery</a>
+          </li>
+          <!-- <li class="a"><a class="navi-non-active" href="/index">About me</a></li>
+                <li class="a"><a class="navi-active" href="/projects">Projects</a></li>
+                <li class="a"><a class="navi-non-active" href="/contacts">Contacts</a></li>
+                <li class="a"><a class="navi-non-active" href="/gallery">Gallery</a></li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="main-content-block">
+      <div class="content-block">
+        <table class="project-form">
+          <tr class="project-row">
+            <td class="project-icon">
+              <img class="icon" src="icons/aws.svg" />
+            </td>
+            <td class="empty-in-between"></td>
+            <td class="description">
+              <p>
+                <b
+                  >Scalable Distributed System on AWS: Stores Ordering System</b
+                >
+              </p>
+              <p>
+                  <ul>
+                <li>Design a RESTful, tomcat-based, scalable distributed web
+                application that allows stores to make HTTP POST requests to
+                record purchase orders and GET requests to look up previous
+                orders. </li>
+                <li>Implemented in Java language, easily deployable to
+                multiple AWS EC2 instances or run locally. </li>
+                <li>Built a
+                multi-threaded client which simulates multiple stores, sends
+                POST/GET requests to the servers and records QPS (query per
+                second), mean/p95 latency of HTTP requests for performance
+                evaluation. </li>
+                <li>Implement and test multiple strategies to scale-up
+                the system, including multi-threading, AWS Load Balancer, Amazon
+                MQ (with self-implemented connection pool), Amazon RDS, Amazon
+                DynamoDB, Amazon DocumentDB (MongoDB). The system is deployed on
+                3 AWS EC2 instances, and passes a stress test of up to 1 million
+                requests with about 6000 QPS. </li>
+                <li>Codes: <a href="https:www.github.com/zhangsisi0717/StoresOrderingSystem">github.com/zhangsisi0717/StoresOrderingSystem</a></li>
+                </ul>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="content-block">
+        <table class="project-form">
+          <tr class="project-row">
+            <td class="project-icon">
+              <img class="icon" src="icons/map.svg" />
+            </td>
+            <td class="empty-in-between"></td>
+            <td class="description">
+              <p>
+                <b
+                  >Web Application: the Itinerary Planner</b
+                >
+              </p>
+              <p>
+                  <ul>
+                <li>Visit at: <a href="https://zhangsisi0717.github.io/planner">zhangsisi0717.github.io/planner</a></li>
+                <li>The Itinerary Planner is a modern-looking, interactive web application built with Vue.js, powered by Google Maps APIs and Google Cloud Firestore.</li>
+                <li>Given origin / destination and a list of stops, it uses highly efficient algorithms for ATSP (asymmetric travelling salesman’s problem) and outputs a near-optimal itinerary that begins at the origin, visits all stops and ends at the destination using minimal travel time.</li>
+                <li>Features: interactive map with traffic map / satellite view, address auto-complete, real-time traffic-based travel time look up powered by Google Map APIs; sign up account, log in, save and retrieve itineraries, powered by Google Cloud Firestore.</li>
+                <li>Codes: <a href="https:www.github.com/zhangsisi0717/Optimal-Itinerary-Planner">github.com/zhangsisi0717/Optimal-Itinerary-Planner</a></li>
+                </ul>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="content-block">
+        <table class="project-form">
+          <tr class="project-row">
+            <td class="project-icon">
+              <img class="icon" src="icons/ml.svg" />
+            </td>
+            <td class="empty-in-between"></td>
+            <td class="description">
+              <p>
+                <b
+                  >Machine Learning and Data Mining in Mass Spectrometry</b
+                >
+              </p>
+              <p>
+                  <ul>
+                <li>Propose a novel approach which applies non-negative Lasso regression and tensor factorization to analyze & annotate large- scale mass spectrometry data.</a></li>
+                <li>Implement a highly efficient, gradient projection method-based quadratic programming (QP) solver using Python within the numpy framework, to perform non-negative Lasso regression and tensor factorization. Also builds a fully object-oriented wrapper class for mass spectrometry data that provides many useful helper methods in Python.</li>
+                <li>Achieves the state-of-art annotation accuracy on public mass spectrometry datasets.</li>
+                <li>Codes: <a href="https:www.github.com/zhangsisi0717/unintentional_fragments_annotation">github.com/zhangsisi0717/unintentional_fragments_annotation</a></li>
+                </ul>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

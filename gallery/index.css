@@ -83,13 +83,13 @@ div.pic-container {
   .gallery-container {
     width: 95%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "pic1 desc1"
-      "desc2 pic2"
+      "pic2 desc2"
       "pic3 desc3"
-      "desc4 pic4";
+      "pic4 desc4";
     margin: 0 auto;
     column-gap: 10px;
     row-gap: 10px;
@@ -134,7 +134,7 @@ div.pic-container {
   }
   
   img.gallery-pic {
-    width: 35vw;
+    width: 60vw;
     border-radius: 10px;
   }
   
@@ -142,13 +142,13 @@ div.pic-container {
     display: inline-block;
     text-align: center;
     font-family: "Times New Roman", Times, serif;
-    font-size: 1.4vw;
+    font-size: 3.5vw;
     font-style: italic;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 1em;
+    padding: .5em;
     word-wrap: break-word;
     background-color: rgb(240, 240, 240);
     border-radius: 10px;
@@ -156,8 +156,10 @@ div.pic-container {
   }
   
   div.pic-container {
+    display: inline-block;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: relative;
   }
 

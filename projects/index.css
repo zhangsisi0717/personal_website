@@ -28,7 +28,8 @@ td.description li:after {
 td.description ul {
   margin-left: 0em;
   padding-inline-start: 20px;
-  margin-top: 0.5px;
+  margin-top: 0;
+  margin-block-end: 0;
 }
 
 td.description li {

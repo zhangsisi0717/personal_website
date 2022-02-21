@@ -1,65 +1,164 @@
-.imgtable {
-  display: flex;
-  flex-direction: row;
+.gallery-container {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "pic1 desc1"
+    "desc2 pic2"
+    "pic3 desc3"
+    "desc4 pic4";
+  margin: 0 auto;
+  column-gap: 1vw;
+  row-gap: 0.5vw;
 }
 
-div.main-content-block {
-  top: 180px;
-  position: absolute;
-  margin-left: 10.1%;
-  margin-right: 10.1%;
-  width: 79.8%;
-  overflow: hidden;
+.gallery-container > pic1 {
+  grid-area: pic1;
+  /* background-color: #ffc0cb; */
+}
+.gallery-container > pic2 {
+  grid-area: pic2;
+  /* background-color: #ffc0cb; */
 }
 
-div.text-body {
-  /* padding: 2px; */
-  padding-left: 0.5em;
-  padding-right: 0em;
-  padding-top: 0;
+.gallery-container > pic3 {
+  grid-area: pic3;
+  /* background-color: #ffc0cb; */
 }
 
-div.image {
-  padding-left: 0;
+.gallery-container > pic4 {
+  grid-area: pic4;
+  /* background-color: #ffc0cb; */
 }
 
-p {
-  margin-block-start: 0em;
-  text-align: justify;
+.gallery-container > desc1 {
+  grid-area: desc1;
+  /* background-color: #ffc0cb; */
 }
-img.selfie {
-  /* height: 16vw;
-    width: 20vw; */
-  height: 230px;
-  width: 275px;
-  padding-right: 0.5vw;
-  border-radius: 15px;
+.gallery-container > desc2 {
+  grid-area: desc2;
+  /* background-color: #ffc0cb; */
 }
 
-div.rectangle-box {
-  margin-top: 0px;
-  border-bottom: 1px solid rgb(100, 100, 100);
+.gallery-container > desc3 {
+  grid-area: desc3;
+  /* background-color: #ffc0cb; */
 }
 
-/* td.education-first-column {
-    column-span: ;
-  } */
-
-td.education-second-column {
-  text-align: right;
-  margin-left: 50px;
-  font-weight: normal;
+.gallery-container > desc4 {
+  grid-area: desc4;
+  /* background-color: #ffc0cb; */
 }
 
-table.education-form {
-  width: 100%;
-  margin-top: 10px;
+img.gallery-pic {
+  width: 28vw;
+  border-radius: 10px;
 }
 
-table.education-form td {
+div.desc-text {
+  display: inline-block;
+  text-align: center;
   font-family: "Times New Roman", Times, serif;
+  font-size: 1.4vw;
+  font-style: italic;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  word-wrap: break-word;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  border: 0.5px dashed rgb(210, 210, 210);
 }
 
-td.education-form {
-  padding: 10px;
+div.pic-container {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+@media (max-width: 600px){
+  .gallery-container {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "pic1 desc1"
+      "desc2 pic2"
+      "pic3 desc3"
+      "desc4 pic4";
+    margin: 0 auto;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  
+  .gallery-container > pic1 {
+    grid-area: pic1;
+    /* background-color: #ffc0cb; */
+  }
+  .gallery-container > pic2 {
+    grid-area: pic2;
+    /* background-color: #ffc0cb; */
+  }
+  
+  .gallery-container > pic3 {
+    grid-area: pic3;
+    /* background-color: #ffc0cb; */
+  }
+  
+  .gallery-container > pic4 {
+    grid-area: pic4;
+    /* background-color: #ffc0cb; */
+  }
+  
+  .gallery-container > desc1 {
+    grid-area: desc1;
+    /* background-color: #ffc0cb; */
+  }
+  .gallery-container > desc2 {
+    grid-area: desc2;
+    /* background-color: #ffc0cb; */
+  }
+  
+  .gallery-container > desc3 {
+    grid-area: desc3;
+    /* background-color: #ffc0cb; */
+  }
+  
+  .gallery-container > desc4 {
+    grid-area: desc4;
+    /* background-color: #ffc0cb; */
+  }
+  
+  img.gallery-pic {
+    width: 35vw;
+    border-radius: 10px;
+  }
+  
+  div.desc-text {
+    display: inline-block;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.4vw;
+    font-style: italic;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    word-wrap: break-word;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    border: 0.5px dashed rgb(210, 210, 210);
+  }
+  
+  div.pic-container {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+  }
+
 }

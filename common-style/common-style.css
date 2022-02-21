@@ -1,5 +1,5 @@
 /* common css file */
-
+  
 body {
   /* font-family: Georgia, "Times New Roman", Times, serif; */
   font-family: serif;
@@ -126,4 +126,130 @@ div.main-content-block {
   margin-right: 10.1%;
   width: 79.8%;
   overflow: hidden;
+}
+
+@media (max-width: 600px){
+  h1 {
+    color: #36578d;
+    font-style: bold;
+    font-family: serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px
+  }
+
+  h2 {
+    color: #36578d;
+    font-style: bold;
+    /* font-family: "Times New Roman", Times, serif; */
+    font-family: serif;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  h3 {
+    font-size: 13px;
+    /* font-family: "Times New Roman", Times, serif; */
+    font-family: serif;
+    margin-bottom: 13px;
+  }
+
+  div.top-fixed {
+    position: fixed;
+    width: 96%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 100;
+    background-color: rgb(245, 245, 245);
+  }  
+  
+  div.title {
+    /* padding-bottom: 0.2em; */
+    margin-bottom: 13px;
+    border-bottom: 3px double rgb(100, 100, 100);
+    margin-top: 13px;
+  }
+  
+  div.navi-section {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  ul.navi {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  .navi li a {
+    display: block;
+    /* color: white; */
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    width: 24vw;
+  }
+  
+  .navi a {
+    font-family: serif;
+    font-style: bold;
+    font-size: 14px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  a {
+    color: #224b8d;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    border-bottom: 1px gray dotted;
+  }
+  
+  a.navi-active {
+    background-color: black;
+    color: white;
+  }
+  
+  a.navi-non-active {
+    background-color: rgb(230, 230, 230);
+    color: #36578d;
+  }
+  
+  .navi a.navi-non-active:hover {
+    background-color: rgb(150, 150, 150);
+    color: white;
+    border-bottom: none;
+  }
+  
+  .navi a.navi-non-active:focus {
+    background-color: rgb(150, 150, 150);
+    color: white;
+    border-bottom: none;
+    outline: none;
+  }
+  
+  div.main-content-block {
+    top: 150px;
+    position: absolute;
+    margin-left: 2.1%;
+    margin-right: 2.1%;
+    width: 95.8%;
+    overflow: hidden;
+  }
 }

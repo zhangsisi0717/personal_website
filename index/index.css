@@ -54,3 +54,70 @@ table.education-form td {
 td.education-form {
   padding: 10px;
 }
+
+@media (max-width: 600px){
+  .imgtable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+  }
+  
+  div.text-body {
+    /* padding: 2px; */
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-top: 0;
+    font-size: 13px;
+  }
+
+  div.text-body p {
+    margin-block-end: .5em;
+  }
+  
+  div.image {
+    padding-left: 0;
+  }
+  
+  p {
+    margin-block-start: 0em;
+    text-align: justify;
+  }
+  img.selfie {
+    height: 180px;
+    width: 215px;
+    /* padding-right: 0.5vw; */
+    border-radius: 15px;
+  }
+  
+  div.rectangle-box {
+    margin-top: 0px;
+    border-bottom: 1px solid rgb(100, 100, 100);
+  }
+  
+  /* td.education-first-column {
+      column-span: ;
+    } */
+  
+  td.education-second-column {
+    text-align: right;
+    margin-left: 50px;
+    font-weight: normal;
+  }
+  
+  table.education-form {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  table.education-form td {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 13px;
+  }
+  
+  td.education-form {
+    padding: 5px;
+  }  
+}
